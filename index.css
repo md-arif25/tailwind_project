@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+@layer utilities{
+    .caption{
+        @apply bg-black text-white dark:bg-white dark:text-black uppercase text-xs px-1.5 py-0.5 rounded-sm;
+    }
+    .tag{
+        @apply bg-[#5677AC26] text-black dark:text-white text-xs md:text-sm uppercase px-1.5 py-0.5 rounded-sm hover:bg-black hover:text-white transition-all cursor-pointer
+    }
+}
+@layer utilities {
+  .scroll-smooth-learnmore {
+    scroll-behavior: smooth;
+  }
+}

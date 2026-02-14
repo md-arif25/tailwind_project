@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Tricker AI</title>
+</head>
+<body class="bg-white text-black dark:bg-gray-900 dark:text-white">
+    <!--Header section-->
+    <header class="md:mx-14 md:py-4 py-2 px-2">
+        <nav  class="container mx-auto flex items-center justify-between">
+            <div class="flex items-center gap-1 md:gap-3 ">
+                <img src="Assets/logu.png" alt="logu" class="w-10 md:w-20">
+                <p class="text-[8px] md:text-xs hidden sm:block">A Mark Cuban Company <br>AI-Financial News Aggregator</p>
+            </div>
+            <div class="flex items-center gap-2 md:gap-7">
+                <a href="Signup.html">
+                    <button class="bg-blue-500 md:text-base text-xs md:py-3 py-1 md:px-5 px-2 rounded-md text-white font-semibold hover:bg-blue-600 transition hover:scale-105 hover:translate-y-1">Signup</button>
+                </a>  
+                <a href="#learnmore" class="scroll-smooth-learnmore">
+                    <button class="bg-blue-500 md:text-base text-xs md:py-3 py-1 md:px-5 px-2 rounded-md text-white font-semibold hover:bg-blue-600 transition hover:scale-105 hover:translate-y-1 hidden sm:block" >Learn More</button>
+                </a>             
+                <a href="news.html">
+                    <button class="bg-blue-500 md:text-base text-xs md:py-3 py-1 md:px-5 px-2 rounded-md text-white font-semibold hover:bg-blue-600 transition hover:scale-105 hover:translate-y-1">Personalize News</button>
+                </a>
+                <div class="text-blue-500 bg-[#5677AC26] md:text-2xl text-lg font-bold size-9 rounded-full items-center flex justify-center hover:scale-105 transition-all cursor-pointer">
+                    IK
+                </div>
+                <button id="themeToggle"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+</svg>
+
+                </button>
+            </div>
+        </nav>
+    </header>
+    <!--Banner section-->
+    <section class="flex relative flex-col items-center px-4 md:px-0 py-20 md:py-32 bg-[url('https://images.pexels.com/photos/8370752/pexels-photo-8370752.jpeg?auto=compress&cs=tinysrgb&w=1260&h=751&dpr=1')] bg-no-repeat bg-cover">
+        <h3 class=" absolute text-white text-lg font-bold animate-pulse top-6 right-12 md:right-30 ">
+            Please Turn On Dark Mode 🌙
+        </h3>
+        <h1 class="font-bold italic text-3xl md:text-6xl text-white">trickerAI</h1>
+        <div class="flex bg-white dark:bg-gray-900 dark:border-r-1 dark:border-b-2 dark:border-blue-500  md:w-[520px] w-full p-2 md:p-4 rounded gap-4 md:mt-10 mt-4 hover:ring dark:hover:ring-0">
+            <img src="Assets/search.png" alt="search">
+            <input type="text" name="search" placeholder="Search any market topic..." class="w-full outline-none  ">
+        </div>
+        <p class="text-xs text-gray-300 pt-2 md:pt-4">there are 6 charecter available for your preferance</p>
+    </section>
+    <!--News section[mx-auto]-->
+    <section class="container grid grid-cols-12  mb-8 gap-8 md:px-0 px-4 pt-10 mx-auto ">
+         <!--All News section-->
+        <section class="md:col-span-9 col-span-12 md:ml-8 ">
+            <div class="flex items-center justify-between md:pb-2.5 border-b-2 border-black dark:border-white md:border-b-4">
+                <h3 class="md:text-2xl text-lg font-semibold">ALL NEWS</h3>
+                <div class="flex items-center gap-2">
+                    <p>Filter by:</p>
+                    <h4 class="font-bold">Stocks</h4>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+            </div>
+            <h2 class="text-black md:text-2xl text-xl font-semibold pt-4 md:mt-8 pb-4 dark:text-white">Individual Stocks </h2>
+            <!--card-1 section-->
+            <div class="flex flex-col md:flex-row md:p-4 p-2 items-center gap-6 
+border border-[#DDE2E5] 
+dark:border-0 dark:border-r-1 dark:border-b-2 dark:border-blue-500
+dark:shadow-lg dark:shadow-blue-500/30 
+mt-5 hover:scale-105 transition-all duration-300 cursor-pointer">
+                <img src="Assets/phone.jpg" alt="" class="w-full h-44 object-cover md:h-40 md:size-[150px]">
+                <div class="">
+                    <div>
+                        <span class="bg-black dark:bg-white dark:text-black text-white uppercase text-xs px-1.5 py-0.5 rounded-sm">Dow Jons</span>
+                        <span class="caption">Nasdaq</span>
+                        <span class="caption">s & p 500</span>
+                    </div>
+                    
+
+                    <div>
+                        <h3 class="md:text-lg font-semibold text-black dark:text-white pb-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non saepe nam odio esse eveniet.</h3>
+                        <p class="md:text-base text-sm text-black dark:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id possimus beatae voluptate repellendus nisi eos excepturi consectetur provident, accusamus doloribus.</p>
+                    </div>
+                    <div class="flex items-center gap-3 md:gap-5 md:text-base text-sm">
+                    <p>10 december 2024</p>
+                    <p >By <span class="text-blue-500 font-semibold cursor-pointer">sadman siddique</span></p>
+                    </div>
+                </div>
+                
+            </div>
+            <!--card-2 section-->
+            <div class="flex flex-col md:flex-row md:p-4 p-2 items-center gap-6 
+border border-[#DDE2E5] 
+dark:border-0 dark:border-r-1 dark:border-b-2 dark:border-blue-500
+dark:shadow-lg dark:shadow-blue-500/30 
+mt-5 hover:scale-105 transition-all duration-300 cursor-pointer">
+                <img src="Assets/laptop.jpg" alt="" class="w-full h-44 object-cover md:h-40 md:size-[150px]">
+                <div class="">
+                    <div>
+                        <span class="caption">Dow Jons</span>
+                        <span class="caption">Nasdaq</span>
+                        <span class="caption">s & p 500</span>
+                    </div>
+                    
+
+                    <div>
+                        <h3 class="md:text-lg font-semibold text-black dark:text-white pb-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non saepe nam odio esse eveniet.</h3>
+                        <p class="md:text-base text-sm text-black dark:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id possimus beatae voluptate repellendus nisi eos excepturi consectetur provident, accusamus doloribus.</p>
+                    </div>
+                    <div class="flex items-center gap-3 md:gap-5 md:text-base text-sm">
+                    <p>10 december 2024</p>
+                    <p >By <span class="text-blue-500 font-semibold cursor-pointer">sadman siddique</span></p>
+                    </div>
+                </div>
+                
+            </div>
+            <!--card-3 section-->
+            <div class="flex flex-col md:flex-row md:p-4 p-2 items-center gap-6 
+border border-[#DDE2E5] 
+dark:border-0 dark:border-r-1 dark:border-b-2 dark:border-blue-500
+dark:shadow-lg dark:shadow-blue-500/30 
+mt-5 hover:scale-105 transition-all duration-300 cursor-pointer">
+                <img src="Assets/manpc.jpg" alt="" class="w-full h-44 object-cover md:h-40 md:size-[150px]">
+                <div class="">
+                    <div>
+                        <span class="caption">Dow Jons</span>
+                        <span class="caption">Nasdaq</span>
+                        <span class="caption">s & p 500</span>
+                    </div>
+                    
+
+                    <div>
+                        <h3 class="md:text-lg font-semibold text-black dark:text-white pb-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non saepe nam odio esse eveniet.</h3>
+                        <p class="md:text-base text-sm text-black dark:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id possimus beatae voluptate repellendus nisi eos excepturi consectetur provident, accusamus doloribus.</p>
+                    </div>
+                    <div class="flex items-center gap-3 md:gap-5 md:text-base text-sm">
+                    <p>10 december 2024</p>
+                    <p >By <span class="text-blue-500 font-semibold cursor-pointer">sadman siddique</span></p>
+                    </div>
+                </div>
+                
+            </div>
+             
+            <h2 class="text-black dark:text-white  md:text-2xl text-xl font-semibold pt-4 md:mt-8 pb-4">
+                Stock Sector
+            </h2>
+            <!--card-1 section-->
+            <div class="flex flex-col md:flex-row md:p-4 p-2 items-center gap-6 
+border border-[#DDE2E5] 
+dark:border-0 dark:border-r-1 dark:border-b-2 dark:border-blue-500
+dark:shadow-lg dark:shadow-blue-500/30 
+mt-5 hover:scale-105 transition-all duration-300 cursor-pointer">
+                <img src="Assets/paper.jpg" alt="" class="w-full h-44 object-cover md:h-40 md:size-[150px]">
+                <div class="">
+                    <div>
+                        <span class="caption">Dow Jons</span>
+                        <span class="caption">Nasdaq</span>
+                        <span class="caption">s & p 500</span>
+                    </div>
+                    
+
+                    <div>
+                        <h3 class="md:text-lg font-semibold text-black dark:text-white  pb-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non saepe nam odio esse eveniet.</h3>
+                        <p class="md:text-base text-sm text-black dark:text-white ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id possimus beatae voluptate repellendus nisi eos excepturi consectetur provident, accusamus doloribus.</p>
+                    </div>
+                    <div class="flex items-center gap-3 md:gap-5 md:text-base text-sm">
+                    <p>10 december 2024</p>
+                    <p >By <span class="text-blue-500 font-semibold cursor-pointer">sadman siddique</span></p>
+                    </div>
+                </div>
+                
+            </div>
+            <!--card-2 section-->
+            <div class="flex flex-col md:flex-row md:p-4 p-2 items-center gap-6 
+border border-[#DDE2E5] 
+dark:border-0 dark:border-r-1 dark:border-b-2 dark:border-blue-500
+dark:shadow-lg dark:shadow-blue-500/30 
+mt-5 hover:scale-105 transition-all duration-300 cursor-pointer">
+                <img src="Assets/coin.jpg" alt="" class="w-full h-44 object-cover object-top md:h-40 md:size-[150px]">
+                <div class="">
+                    <div>
+                        <span class="caption">Dow Jons</span>
+                        <span class="caption">Nasdaq</span>
+                        <span class="caption">s & p 500</span>
+                    </div>
+                    
+
+                    <div>
+                        <h3 class="md:text-lg font-semibold text-black dark:text-white pb-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non saepe nam odio esse eveniet.</h3>
+                        <p class="md:text-base text-sm text-black dark:text-white ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id possimus beatae voluptate repellendus nisi eos excepturi consectetur provident, accusamus doloribus.</p>
+                    </div>
+                    <div class="flex items-center gap-3 md:gap-5 md:text-base text-sm">
+                    <p>10 december 2024</p>
+                    <p >By <span class="text-blue-500 font-semibold cursor-pointer">sadman siddique</span></p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <h2 class="text-black dark:text-white  md:text-2xl text-xl font-semibold pt-4 md:mt-8 pb-4">
+                Stock Market Topics
+            </h2>
+            <!--card-1 section-->
+            <div class="flex flex-col md:flex-row md:p-4 p-2 items-center gap-6 
+border border-[#DDE2E5] 
+dark:border-0 dark:border-r-1 dark:border-b-2 dark:border-blue-500
+dark:shadow-lg dark:shadow-blue-500/30 
+mt-5 hover:scale-105 transition-all duration-300 cursor-pointer">
+                <img src="Assets/money.jpg" alt="" class="w-full h-44 object-cover md:h-40 md:size-[150px]">
+                <div class="">
+                    <div>
+                        <span class="caption">Dow Jons</span>
+                        <span class="caption">Nasdaq</span>
+                        <span class="caption">s & p 500</span>
+                    </div>
+                    
+
+                    <div>
+                        <h3 class="md:text-lg font-semibold text-black dark:text-white  pb-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non saepe nam odio esse eveniet.</h3>
+                        <p class="md:text-base text-sm text-black dark:text-white ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id possimus beatae voluptate repellendus nisi eos excepturi consectetur provident, accusamus doloribus.</p>
+                    </div>
+                    <div class="flex items-center gap-3 md:gap-5 md:text-base text-sm">
+                    <p>10 december 2024</p>
+                    <p >By <span class="text-blue-500 font-semibold cursor-pointer">sadman siddique</span></p>
+                    </div>
+                </div>
+                
+            </div>
+            <h2 class="text-black dark:text-white  md:text-2xl text-xl font-semibold pt-4 md:mt-8 pb-4">
+                About us
+            </h2>
+
+            <!--About section-->
+            <div class="flex flex-col md:flex-row md:p-4 p-2 items-center gap-6 
+            border border-[#DDE2E5] 
+            dark:border-0 dark:border-r-1 dark:border-b-2 dark:border-blue-500
+            dark:shadow-lg dark:shadow-blue-500/30 
+            mt-5 hover:scale-105 transition-all duration-300 cursor-pointer" id="learnmore">
+                
+
+                <p class="text-gray-700 dark:text-gray-300 leading-relaxed" >
+                TrickerAI is designed to revolutionize the way you interact with technology. By combining cutting-edge artificial intelligence with intuitive tools, it empowers individuals and businesses to automate repetitive tasks, generate creative content, and gain actionable insights from complex data. Whether you are a content creator looking to enhance productivity, a marketer aiming to optimize campaigns, or a developer seeking intelligent solutions, TrickerAI adapts seamlessly to your workflow. With its smart algorithms and user-friendly interface, you can focus on innovation while the AI handles the heavy lifting. From generating ideas and analyzing trends to streamlining daily operations, TrickerAI brings the power of AI directly to your fingertips. Discover how artificial intelligence can transform your work, save time, and unlock new possibilities with TrickerAI today.
+                </p>   
+            </div>
+            
+        </section>
+         <!--features section-->
+        <section class="md:col-span-3 col-span-12 md:mr-8">
+            <div class="flex items-center justify-between md:pb-2.5 border-b-2 border-black dark:border-white  md:border-b-4">
+                <h3 class="md:text-2xl text-lg font-semibold uppercase">features</h3>
+            </div>
+            <h2 class="text-black dark:text-white  md:text-2xl text-xl font-semibold pt-4 md:mt-8 pb-4">Daily Rundowns </h2>
+            <!--tag section-->
+            <div class="border borde-[#F5F5F5] p-3 md:p-5 space-y-3 md:space-y-5">
+                <div>
+                    <h3 class="font-medium pb-2">Earnings:</h3>
+                    <div>
+                        <span class="bg-[#5677AC26] text-black dark:text-white   text-xs md:text-sm uppercase px-1.5 py-0.5 rounded-sm hover:bg-black hover:text-white transition-all cursor-pointer">Sadman</span>
+                        <span class="tag">Arif</span>
+                        <span class="tag">Maisha</span>
+                        <span class="tag">Pory</span>
+                        <span class="tag">Ahiat</span>
+                        <span class="tag">Fehar</span>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-medium pb-2">Movers:</h3>
+                    <div>
+                        <span class="tag">Sadman</span>
+                        <span class="tag">Arif</span>
+                        <span class="tag">Maisha</span>
+                        <span class="tag">Pory</span>
+                        <span class="tag">Ahiat</span>
+                        <span class="tag">Fehar</span>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-medium pb-2">Technicals:</h3>
+                    <div>
+                        <span class="tag">Sadman</span>
+                        <span class="tag">Arif</span>
+                        <span class="tag">Maisha</span>
+                        <span class="tag">Pory</span>
+                        <span class="tag">Ahiat</span>
+                        <span class="tag">Fehar</span>
+                    </div>
+                </div>
+            </div>
+
+            <!--small-card-->
+            <div class="pt-5">
+                <img src="Assets/banglacoin.jpg" alt="" class="w-full object-cover hover:h2">
+                <h2 class="font-medium text-black dark:text-white p-4 text-center ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati consectetur repellat sint.</h2>
+            </div>
+                        <div class="pt-5">
+                <img src="Assets/blaserman.jpg" alt="" class="w-full object-cover">
+                <h2 class="font-medium text-black dark:text-white  p-4 text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati consectetur repellat sint.</h2>
+            </div>
+                        <div class="pt-5">
+                <img src="Assets/coin.jpg" alt="" class="w-full object-cover">
+                <h2 class="font-medium text-black dark:text-white  p-4 text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati consectetur repellat sint.</h2>
+            </div>
+
+        </section>
+
+    </section>
+
+    <footer class="text-black dark:text-white dark:text-gray-300  text-center pb-5 w-full">
+        All right reserved to trickerAI - 2026
+    </footer>
+
+<script>
+  const toggleBtn = document.getElementById("themeToggle");
+  const html = document.documentElement;
+
+  // 🔹 Page load হলে আগের theme apply হবে
+  if (localStorage.getItem("theme") === "dark") {
+    html.classList.add("dark");
+  }
+
+  toggleBtn.addEventListener("click", () => {
+    html.classList.toggle("dark");
+
+    // 🔹 theme save
+    if (html.classList.contains("dark")) {
+      localStorage.setItem("theme", "dark");
+    } else {
+      localStorage.setItem("theme", "light");
+    }
+  });
+</script>
+
+
+    
+</body>
+</html>
